@@ -9,6 +9,12 @@ Access to a Kubernetes cluster
 
 ## Usage
 
+## As a container
+
+```bash
+docker run -it --rm --name debugtools --privileged -v /:/media/root --ipc=host --net=host --pid=host k8sschool/debugtools
+```
+
 ## With a regular container
 
 Use container template provided in [share-process-namespace documentation], and replace the image field value (i.e. `busybox`) with `k8sschool/debugtools:1.0.0`.
