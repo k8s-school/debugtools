@@ -7,8 +7,7 @@ RUN apk add --update-cache \
     sysstat \
     strace \
     net-tools \
-    vim \
-  && rm -rf /var/cache/apk/*
+    vim
 
 # Set default command
 CMD ["/usr/bin/bash"]
